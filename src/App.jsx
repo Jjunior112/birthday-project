@@ -120,6 +120,7 @@ function App() {
             <p>Primeiro culto juntos em MG juntos</p>
             <p> novembro de 2021</p>
             <p>
+              |
             </p>
 
           </div>
