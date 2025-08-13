@@ -10,7 +10,7 @@ nav ul {
   justify-content: space-evenly;
 }
 
-nav ul button{
+nav ul button {
   background-color: #06e6e6;
   color: #e91e63;
   border: none;
@@ -98,7 +98,7 @@ h1 {
 
 .message p {
   text-indent: 3em;
- 
+
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
@@ -128,8 +128,10 @@ footer {
 
   .timeline {
     bottom: 12em;
+  }
 
-
+  .message p {
+    text-align: justify;
   }
 
 }

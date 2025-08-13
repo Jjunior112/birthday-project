@@ -5,10 +5,17 @@ import './App.css'
 
 function App() {
   const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  const tocarMusica = () => {
+  const playPause = () => {
     if (audioRef.current) {
-      audioRef.current.play();
+      if (audioRef.current.paused) {
+        audioRef.current.play();
+        setIsPlaying(true);
+      } else {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
     }
   };
 
@@ -23,7 +30,11 @@ function App() {
         <ul>
           <li><a href="#message">Textão</a></li>
           <li><a href="#lembrancas">Lembranças</a></li>
-          <li><button onClick={tocarMusica}>Tocar Música</button></li>
+          <li>
+            <button onClick={playPause}>
+              {isPlaying ? "Pausar música" : "Tocar música"}
+            </button>
+          </li>
         </ul>
       </nav>
       <section className='image'>
@@ -33,21 +44,24 @@ function App() {
 
       <section className="message" >
 
-        <h1 id='message'>🎉 Feliz Aniversário, meu amor!</h1>
+        <h1 id='message'>🎉Feliz Aniversário, meu amor!🥳</h1>
 
         <p>Essa foi uma maneira que consegui achar para tentar mostrar o quanto você é especial na minha vida. </p>
-        <p>Te desejo toda a felicidade do mundo, sonhos, metas, conquistas. Você é maravilhosa garota!</p>
+        <p> De te lembrar que nem o tempo ou a distância foram capazes de nos separar. ❤️</p>
 
-        <p>Que Deus continue te abençoando e te dê muitos anos de vida</p>
+        <p>Te desejo toda a felicidade do mundo, sonhos, metas, conquistas. Que possamos passar várias datas como essa juntos.🎁 </p>
+
+        <p>Que Deus continue te abençoando e te dê muuuuuuuuitos anos de vida. 🎉</p>
 
 
-        <h2>Eu amo você, menina!!! ❤️</h2>
+        <h2>Eu amo você, menina!!! 💙 </h2>
 
       </section>
 
       <section className='image'>
 
       </section>
+
 
       <div>
 
