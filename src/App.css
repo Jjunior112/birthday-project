@@ -36,9 +36,7 @@ section {
 }
 
 .image {
-  background-image: url('foto.png');
-  background-size: cover;
-  background-image: url('foto.png');
+  background-image: url('https://github.com/Jjunior112/birthday-project/blob/main/public/foto.png');
   background-size: contain;
   background-position: center;
   overflow: hidden;
