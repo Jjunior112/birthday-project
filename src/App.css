@@ -1,0 +1,141 @@
+nav {
+  padding: 1em;
+  background-color: #e91e63;
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+nav ul button{
+  background-color: #06e6e6;
+  color: #e91e63;
+  border: none;
+  border-radius: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #06e6e6;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+  height: 80vh;
+  background-color: #f5f5dc;
+}
+
+.image {
+  background-image: url('foto.png');
+  background-size: cover;
+  background-image: url('foto.png');
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.lembrancas {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  align-items: center;
+  text-align: center;
+  background-color: #e91e63;
+}
+
+#lembrancas {
+  margin: 1em;
+  color: #f5f5dc;
+}
+
+.lembrancas div {
+  margin-right: 10em;
+}
+
+.lembrancas img {
+  width: 15em;
+  height: 20em;
+
+}
+
+.lembrancas p:last-child {
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.timeline {
+  display: flex;
+  position: relative;
+  bottom: 7em;
+  margin: 0 auto;
+  width: 100%;
+  border-top: 4px solid #000;
+}
+
+h1 {
+  color: #ff4081;
+  margin: 1.5rem 0 1rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.message {
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message p {
+  text-indent: 3em;
+ 
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  background-color: #e91e63;
+  color: #f5f5dc;
+}
+
+@media (width<500px) {
+
+  .image {
+    height: 80vh;
+    background-image: url('foto.png');
+    background-size: cover;
+    background-image: url('foto.png');
+    background-position: center;
+    overflow: hidden;
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  h1 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .timeline {
+    bottom: 12em;
+
+
+  }
+
+}
