@@ -114,11 +114,7 @@ footer {
 
   .image {
     height: 80vh;
-    background-image: url('foto.png');
     background-size: cover;
-    background-image: url('foto.png');
-    background-position: center;
-    overflow: hidden;
   }
 
   section {
