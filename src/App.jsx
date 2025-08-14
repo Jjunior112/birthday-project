@@ -117,7 +117,7 @@ function App() {
 
           <div>
             <img src="foto12.jpg" alt="" />
-            <p>Primeiro culto juntos em MG juntos</p>
+            <p>Primeiro culto juntos em MG</p>
             <p> novembro de 2021</p>
             <p>
               |
